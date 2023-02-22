@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 
@@ -8,6 +8,10 @@ app = Flask(__name__)
 value = 0
 
 @app.route('/index')
+def index2():
+    return render_template('index.html', title='INDEX')
+
+
 @app.route('/')
 def index():
     global value
@@ -19,7 +23,8 @@ def index():
 
 @app.route('/about')
 def about():
-    return '<h1>About</h1>'
+    return render_template('index.html', title='ABOUT')
+
 
 
 
