@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 value = 0
 
+@app.route('/index')
 @app.route('/')
 def index():
     global value
