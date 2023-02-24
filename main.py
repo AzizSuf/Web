@@ -12,13 +12,13 @@ def index2():
     return render_template('index.html', title='INDEX')
 
 
-@app.route('/')
-def index():
+@app.route('/<int:userid>')
+def index(userid):
     global value
     val = value
     value += 1
 
-    return f'The page was loaded {val} times'
+    return f'The page was loaded {val} times \n user: {userid}'
 
 
 @app.route('/about')
