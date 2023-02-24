@@ -21,6 +21,8 @@ def index():
     return f'The page was loaded {val} times'
 
 
+
+
 @app.route('/about')
 def about():
     return render_template('index.html', title='ABOUT')
