@@ -1,2 +1,2 @@
 # Web
-https://azizsuf.github.io/WebTest/
+Chess board: https://azizsuf.github.io/WebTest/
